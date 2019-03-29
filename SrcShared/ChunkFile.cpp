@@ -16,6 +16,7 @@
 
 #include "Byteswapping.h"		// Canonical
 #include "Platform.h"			// ReallocMemory
+#include <cstring>
 
 
 /***********************************************************************
@@ -718,7 +719,7 @@ void Chunk::SetLength (long inLength)
 
 
 // ---------------------------------------------------------------------------
-//	¥ EmStreamChunk(Handle)					Parameterized Constructor [public]
+//	ï¿½ EmStreamChunk(Handle)					Parameterized Constructor [public]
 // ---------------------------------------------------------------------------
 //	Construct from an existing Chunk
 
@@ -741,7 +742,7 @@ EmStreamChunk::EmStreamChunk(Chunk& chunk) :
 
 
 // ---------------------------------------------------------------------------
-//	¥ ~EmStreamChunk						Destructor				  [public]
+//	ï¿½ ~EmStreamChunk						Destructor				  [public]
 // ---------------------------------------------------------------------------
 
 EmStreamChunk::~EmStreamChunk()
@@ -751,7 +752,7 @@ EmStreamChunk::~EmStreamChunk()
 
 
 // ---------------------------------------------------------------------------
-//	¥ SetLength														  [public]
+//	ï¿½ SetLength														  [public]
 // ---------------------------------------------------------------------------
 //	Set the length, in bytes, of the EmStreamChunk
 
@@ -765,7 +766,7 @@ EmStreamChunk::SetLength(
 
 
 // ---------------------------------------------------------------------------
-//	¥ PutBytes
+//	ï¿½ PutBytes
 // ---------------------------------------------------------------------------
 //	Write bytes from a buffer to a EmStreamChunk
 //
@@ -798,7 +799,7 @@ EmStreamChunk::PutBytes(
 
 
 // ---------------------------------------------------------------------------
-//	¥ GetBytes
+//	ï¿½ GetBytes
 // ---------------------------------------------------------------------------
 //	Read bytes from a EmStreamChunk to a buffer
 //

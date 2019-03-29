@@ -20,6 +20,7 @@
 #include <errno.h>				// ENOENT
 #include <sys/stat.h>
 #include <unistd.h>
+#include <cstring>
 
 
 static const char*	kExtension[] =

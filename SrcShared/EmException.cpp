@@ -20,10 +20,11 @@
 #include "Hordes.h"				// Hordes::Stop
 #include "Platform.h"			// Platform::GetString
 #include "Strings.r.h"			// kStr_InternalErrorException
+#include <cstring>
 
 
 // ---------------------------------------------------------------------------
-//		¥ EmException::EmException
+//		ï¿½ EmException::EmException
 // ---------------------------------------------------------------------------
 
 EmException::EmException (void) throw () :
@@ -33,7 +34,7 @@ EmException::EmException (void) throw () :
 
 	
 // ---------------------------------------------------------------------------
-//		¥ EmException::~EmException
+//		ï¿½ EmException::~EmException
 // ---------------------------------------------------------------------------
 
 EmException::~EmException (void) throw ()
@@ -44,7 +45,7 @@ EmException::~EmException (void) throw ()
 #pragma mark -
 
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionTopLevelAction::EmExceptionTopLevelAction
+//		ï¿½ EmExceptionTopLevelAction::EmExceptionTopLevelAction
 // ---------------------------------------------------------------------------
 
 EmExceptionTopLevelAction::EmExceptionTopLevelAction (void) throw () :
@@ -54,7 +55,7 @@ EmExceptionTopLevelAction::EmExceptionTopLevelAction (void) throw () :
 
 	
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionTopLevelAction::~EmExceptionTopLevelAction
+//		ï¿½ EmExceptionTopLevelAction::~EmExceptionTopLevelAction
 // ---------------------------------------------------------------------------
 
 EmExceptionTopLevelAction::~EmExceptionTopLevelAction (void) throw ()
@@ -65,7 +66,7 @@ EmExceptionTopLevelAction::~EmExceptionTopLevelAction (void) throw ()
 #pragma mark -
 
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionEnterDebugger::EmExceptionEnterDebugger
+//		ï¿½ EmExceptionEnterDebugger::EmExceptionEnterDebugger
 // ---------------------------------------------------------------------------
 
 EmExceptionEnterDebugger::EmExceptionEnterDebugger (void) throw () :
@@ -75,7 +76,7 @@ EmExceptionEnterDebugger::EmExceptionEnterDebugger (void) throw () :
 
 	
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionEnterDebugger::~EmExceptionEnterDebugger
+//		ï¿½ EmExceptionEnterDebugger::~EmExceptionEnterDebugger
 // ---------------------------------------------------------------------------
 
 EmExceptionEnterDebugger::~EmExceptionEnterDebugger (void) throw ()
@@ -84,7 +85,7 @@ EmExceptionEnterDebugger::~EmExceptionEnterDebugger (void) throw ()
 
 
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionEnterDebugger::DoAction
+//		ï¿½ EmExceptionEnterDebugger::DoAction
 // ---------------------------------------------------------------------------
 
 void EmExceptionEnterDebugger::DoAction (void)
@@ -112,7 +113,7 @@ void EmExceptionEnterDebugger::DoAction (void)
 #pragma mark -
 
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionReset::EmExceptionReset
+//		ï¿½ EmExceptionReset::EmExceptionReset
 // ---------------------------------------------------------------------------
 
 EmExceptionReset::EmExceptionReset (EmResetType type) throw () :
@@ -127,7 +128,7 @@ EmExceptionReset::EmExceptionReset (EmResetType type) throw () :
 
 	
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionReset::~EmExceptionReset
+//		ï¿½ EmExceptionReset::~EmExceptionReset
 // ---------------------------------------------------------------------------
 
 EmExceptionReset::~EmExceptionReset (void) throw ()
@@ -136,7 +137,7 @@ EmExceptionReset::~EmExceptionReset (void) throw ()
 
 
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionReset::DoAction
+//		ï¿½ EmExceptionReset::DoAction
 // ---------------------------------------------------------------------------
 
 void EmExceptionReset::DoAction (void)
@@ -147,7 +148,7 @@ void EmExceptionReset::DoAction (void)
 
 
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionReset::what
+//		ï¿½ EmExceptionReset::what
 // ---------------------------------------------------------------------------
 
 const char* EmExceptionReset::what (void) const throw ()
@@ -183,7 +184,7 @@ const char* EmExceptionReset::what (void) const throw ()
 
 
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionReset::Display
+//		ï¿½ EmExceptionReset::Display
 // ---------------------------------------------------------------------------
 
 void EmExceptionReset::Display (void) const
@@ -204,7 +205,7 @@ void EmExceptionReset::Display (void) const
 #pragma mark -
 
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionNextGremlin::EmExceptionNextGremlin
+//		ï¿½ EmExceptionNextGremlin::EmExceptionNextGremlin
 // ---------------------------------------------------------------------------
 
 EmExceptionNextGremlin::EmExceptionNextGremlin (void) throw () :
@@ -214,7 +215,7 @@ EmExceptionNextGremlin::EmExceptionNextGremlin (void) throw () :
 
 	
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionNextGremlin::~EmExceptionNextGremlin
+//		ï¿½ EmExceptionNextGremlin::~EmExceptionNextGremlin
 // ---------------------------------------------------------------------------
 
 EmExceptionNextGremlin::~EmExceptionNextGremlin (void) throw ()
@@ -223,7 +224,7 @@ EmExceptionNextGremlin::~EmExceptionNextGremlin (void) throw ()
 
 
 // ---------------------------------------------------------------------------
-//		¥ EmExceptionNextGremlin::DoAction
+//		ï¿½ EmExceptionNextGremlin::DoAction
 // ---------------------------------------------------------------------------
 
 void EmExceptionNextGremlin::DoAction (void)

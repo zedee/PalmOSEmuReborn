@@ -19,6 +19,7 @@
 #include "HostControl.h"		// HostControlSelectorType, etc.
 
 #include <stddef.h>				// ptrdiff_t
+#include <stdint.h>
 
 /*
 	The Palm OS Emulator interacts closely with legacy Palm OS data

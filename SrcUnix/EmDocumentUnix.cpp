@@ -20,12 +20,13 @@
 #include <FL/filename.h>		// filename_setext
 
 #include <stdio.h>				// fopen, fprintf, fwrite, fclose, FILE
+#include <cstring>
 
 
 EmDocumentUnix*	gHostDocument;
 
 // ---------------------------------------------------------------------------
-//		¥ EmDocument::HostCreateDocument
+//		ï¿½ EmDocument::HostCreateDocument
 // ---------------------------------------------------------------------------
 // Create our document instance.  This is the one and only function that
 // creates the document.  Being in a platform-specific file, it can create
@@ -84,7 +85,7 @@ EmDocumentUnix::~EmDocumentUnix (void)
 #pragma mark -
 
 // ---------------------------------------------------------------------------
-//		¥ EmDocumentUnix::HostSaveScreen
+//		ï¿½ EmDocumentUnix::HostSaveScreen
 // ---------------------------------------------------------------------------
 // Save the current contents of the LCD buffer to the given file.
 
@@ -95,7 +96,7 @@ void EmDocumentUnix::HostSaveScreen (const EmFileRef& destRef)
 	string	fullPath = destRef.GetFullPath ();
 	char*	fNameExt = (char*) malloc (fullPath.size () + 4);
 	strcpy (fNameExt, fullPath.c_str ());
-	filename_setext (fNameExt, ".ppm");
+	fl_filename_setext (fNameExt, ".ppm");
 
 	FILE* f = fopen (fNameExt, "wb");
 	if (f)
